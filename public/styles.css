@@ -1,0 +1,286 @@
+/* Google fonts & font family
+==================================================*/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/* typography
+==================================================*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    /* text-transform: capitalize; */
+    letter-spacing: 2px;
+    position: relative;
+    color: #425BB5;
+    margin-left: 40px;
+    font-weight: 700;
+}
+h5{
+    font-family: 'Lato', sans-serif;
+    /* text-transform: capitalize; */
+    letter-spacing: 2px;
+    position: relative;
+    color: #425BB5;
+    margin-left: 20px;
+    font-weight: 400;  
+}
+
+h4:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #425BB5;
+    top: 9px;
+}
+
+
+/* General
+==================================================*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.size-50 {
+    font-size: 50px;
+    line-height: 50px
+}
+
+.h-50 {
+    height: 50px;
+}
+
+#home{
+   background: url('https://shubh4527bucket.s3.us-east-2.amazonaws.com/img/home-bg-2.jpg');
+    /* background-size: cover; */
+    height: 100vh; 
+    /* margin-left: 0;
+    padding-left: 5rem; */
+    
+}
+.butn{
+    margin-top: 3rem;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.navbar{
+    padding: 2% 5% 0 0;
+    margin: 0 0 0 0;
+}
+.disply-table {
+    display: table;
+    height: 100vh;
+}
+.nav-link{
+    font-size: 1.1rem;
+
+}
+.navbar-brand{
+    font-size: 30px;
+    
+    
+}
+/* #about{
+    
+    height: 100vh;
+} */
+
+.row{
+    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 2rem;
+    padding-bottom: 0em;
+}
+.footer{
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 1% 0 1% 0;
+    font-family: 'Lato', sans-serif;
+    position: initial; 
+    /* height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
+    margin-bottom: 0px;
+}
+.aboutpad{
+    padding: 8%;
+}
+.pad{
+    padding: 5%;
+}
+.second{
+    padding-left: 7rem;
+}
+.gap{
+    padding-top: 2rem;
+}
+
+#experience {
+    padding: 100px 0;
+    background: #f3f3f3
+}
+
+.experience-row {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience-row h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #425BB5;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.experience-row p {
+    color: #888;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.experience-row .date {
+    color: #000;
+    font-size: 17px;
+}
+
+.timeline {
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+}
+ 
+.timeline:before {
+    background-color: black;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+} 
+
+.timeline-event {
+    position: relative;
+}
+
+.timeline-event:hover .timeline-event-icon {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #425BB5;
+}
+
+.timeline-event:hover .timeline-event-thumbnail {
+    box-shadow: inset 40em 0 0 0 #425BB5;
+}
+
+.timeline-event-copy {
+    padding: 2em;
+    position: relative;
+    top: -1.875em;
+    left: 4em;
+    width: 100%;
+}
+
+.timeline-event-copy h3 {
+    font-size: 1.75em;
+}
+
+.timeline-event-copy h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.timeline-event-copy strong {
+    font-weight: 700;
+}
+
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+}
+.timeline-event-icon {
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #425BB5;
+    outline: 10px solid #f3f3f3;
+    display: block;
+    margin: 0.5em 0.5em 0.5em -0.5em;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+ .timeline-event-thumbnail {
+    -moz-transition: box-shadow 0.5s ease-in 0.1s;
+    -o-transition: box-shadow 0.5s ease-in 0.1s;
+    -webkit-transition: box-shadow 0.5s ease-in;
+    -webkit-transition: box-shadow 0.5s ease-in 0.1s;
+    transition: box-shadow 0.5s ease-in 0.1s;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: inset 0 0 0 0em #425BB5;
+    display: inline-block;
+    margin-bottom: 1.2em;
+    padding: 0.25em 1em 0.2em 1em;
+} 
+
+.card-header{
+    color: white;
+    background: black;
+}
+#contact{
+        background: url('https://shubh4527bucket.s3.us-east-2.amazonaws.com/img/home-bg-2.jpg');
+        /* background-size: cover;
+        height: 100vh;  */
+        margin-left: 0;
+        margin-bottom: 0px;
+        
+        
+}
+.logos{
+    margin: 1em 1em 1em 0;
+}
+
+ion-icon {
+    color:black;
+}
+.social{
+    padding-left: 0;
+}
+.card-title{
+    text-align: left;
+    padding-left: 0px;
+}
